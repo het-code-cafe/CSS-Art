@@ -1,0 +1,281 @@
+*, *::before, *::after{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%; /* 1rem === 10px */
+}
+
+body{
+  height:100vh;
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  background: linear-gradient(to left, #00cdac, #02aab0);
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.kyle{
+  position: relative;
+  transform: scale(0.6);
+}
+
+.kyle__face{
+  width: 47rem;
+  height: 45rem;
+  background-color: #FCDAB3;
+  border-radius: 50%;
+}
+
+.kyle__eye{
+  width: 13rem;
+  height: 15rem;
+  background-color: white;
+  position: absolute;
+  top:50%;
+  border-radius: 50%;
+}
+
+.kyle__eye--left{
+  left: 5.5rem;
+  transform: rotate(30deg) translateY(-70%);
+}
+
+.kyle__eye--right{
+  right: 6.7rem;
+  transform: rotate(-20deg) translateY(-62%);
+}
+
+.kyle__innerEye{
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.kyle__innerEye--left{
+  top:6.3rem;
+  right:3rem;
+}
+
+.kyle__innerEye--right{
+  top: 6.5rem;
+  left:3rem;
+}
+
+.kyle__mouth{
+  height: 2rem;
+  width:9rem;
+  border-radius: 50%;
+  position: absolute;
+  left:50%;
+  transform: translateX(-50%) rotate(2deg);
+  bottom: 6rem;
+  border: 0.4rem solid transparent;
+  border-top: 0.4rem solid black;
+}
+
+.kyle__borderEye{
+  position: absolute;
+  width:5%;
+  height:24%;
+  top: 2.7rem;
+  left:0.5rem;
+  border-radius: 50%;
+  border-left: 0.2rem solid black;
+  transform: rotate(22deg);
+}
+
+.kyle__hat{
+  width: 45rem;
+  height:20rem;
+  background-color: #57C523;
+  position: absolute;
+  left:50%;
+  transform: translateX(-50%);
+  border-radius: 5rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  top: -12%;
+}
+
+.kyle__flap{
+  width:9rem;
+  height:22rem;
+  background-color: #57C523;
+  position: absolute;
+  border-radius: 50%;
+  bottom: -93%;
+  border: 0.3rem solid transparent;
+  border-top: 0.3rem solid black;
+}
+
+.kyle__flap--left{
+  left: -14%;
+  transform: rotate(23deg);
+}
+
+.kyle__flap--right{
+  right:-14%;
+  transform: rotate(-23deg);
+}
+
+.kyle__frontFlap{
+  width:39rem;
+  height:14rem;
+  background-color: #239C38;
+  position: absolute;
+  bottom:5%;
+  left:50%;
+  transform: translateX(-50%) translateY(20%);
+  z-index: -2;
+}
+
+.kyle__cutout{
+  width:100%;
+  position: absolute;
+  height: 7rem;
+  background-color: #FCDAb3;
+  border-radius: 50%;
+  bottom: -5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.cartman{
+  position: relative;
+  transform: scale(0.6);
+}
+
+.cartman__hat{
+  position: absolute;
+  width:100%;
+  height:100%;
+  background-color: #48b4bb;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 40%, 0% 40%);
+  border-radius: 50%;
+}
+
+.cartman__fluff{
+  position: absolute;
+  height: 4rem;
+  width:12rem;
+  background-color: yellow;
+  border-radius: 50%;
+  left:50%;
+  transform:translateX(-50%);
+  top: -4%;
+}
+
+.cartman__cutout{
+  position: absolute;
+  width: 97.8%;
+  height:30%;
+  background-color: #fcdab3;
+  border-radius: 50%;
+  top: 10rem;
+  left:1.1%;
+  border-top: 1.5rem solid yellow;
+}
+.cartman__face{
+  width: 50rem;
+  height:40rem;
+  background-color: #fcdab3;
+  border-radius: 50%;
+}
+
+.cartman__eye{
+  width:13rem;
+  height:15rem;
+  background-color: white;
+  position: absolute;
+  top:55%;
+  border-radius: 50%;
+}
+
+.cartman__eye--left{
+  left:7.5rem;
+  transform: rotate(30deg) translateY(-70%);
+}
+
+.cartman__eye--right{
+  right:7.6rem;
+  transform: rotate(-20deg) translateY(-65%);
+}
+
+.cartman__borderEye{
+  position: absolute;
+  width:5%;
+  height: 24%;
+  border-radius: 50%;
+  top: 2.7rem;
+  left:0.5rem;
+  border-left: 0.2rem solid black;
+  transform: rotate(22deg);
+}
+.cartman__innerEye{
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.cartman__innerEye--left{
+  top: 5rem;
+  right: 4rem;
+}
+
+.cartman__innerEye--right{
+  top:5.55rem;
+  left:4rem;
+}
+
+.cartman__mouth{
+  height: 2rem;
+  width:6rem;
+  position: absolute;
+  border-radius: 50%;
+  bottom: 5rem;
+  left:51%;
+  transform: translateX(-50%) rotate(3deg);
+  border: 0.4rem solid transparent;
+  border-top: 0.4rem solid black;
+}
+
+.cartman__chin{
+  position: absolute;
+  height:20%;
+  width:27%;
+  border-radius: 50%;
+  bottom:9%;
+  left:38%;
+  border: 0.05rem solid transparent;
+  border-bottom: 0.05rem solid rgba(0,0,0,0.9);
+}
+
+.cartman__secondChin{
+  position: absolute;
+  height:100%;
+  width:100%;
+  left:0;
+  bottom:4%;
+  border-radius: 50%;
+  border: 0.05rem solid transparent;
+  border-bottom: 0.05rem solid rgba(0,0,0,0.9);
+}
+
+
+@keyframes popup {
+  from{transform: translateY(2rem) scale(0.6); opacity:0;}
+  to{transform: translateY(0) scale(0.6); opacity:1;}
+}
+
+.popup{
+  animation-name: popup;
+  animation-duration: 0.8s;
+}
